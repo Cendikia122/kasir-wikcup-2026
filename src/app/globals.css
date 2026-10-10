@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@layer base {
+  * { box-sizing: border-box; }
+  body { font-family: system-ui, -apple-system, sans-serif; }
+}
+
+@media print {
+  .no-print { display: none !important; }
+  .print-only { display: block !important; }
+  @page { margin: 8mm; }
+}
+
+@media screen {
+  .print-only { display: none !important; }
+}
